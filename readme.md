@@ -114,7 +114,8 @@ The Imperial Golf League is a hybrid sports DAO that operates from **May to Augu
 
 ## 🧑‍💻 Contributors
 
-- **Dan** — Systems Architect, Blockchain/Game Strategist  
+- **Jason** - Visionary and Featureset PM
+- **Dan** — Systems Architect, Blockchain/Game Strategist
 - **Copilot** — AI Companion & Technical Collaborator
 
 ---
