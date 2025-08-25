@@ -79,6 +79,19 @@ The Imperial Golf League is a hybrid sports DAO that operates from **May to Augu
 
 ---
 
+## 🏆 Trophy Registry
+
+All trophy assets are tracked via a Markdown + JSON registry. Each entry includes:
+
+- Trophy name and season
+- IPFS CID for image and metadata
+- Minting status and token ID
+- Chain reference (e.g., Polygon Amoy Testnet)
+
+This registry supports DAO governance, seasonal storytelling, and legacy tracking.
+
+---
+
 ## 📱 Gameplay Integration
 
 - **Play Golf → Earn AA-RON**
@@ -91,10 +104,9 @@ The Imperial Golf League is a hybrid sports DAO that operates from **May to Augu
 
 ## 🛠️ Development Notes
 
-- Initial trophy NFT minted via OpenSea’s shared SeaDrop contract (`0xFF33BF842fCCb0784370f04E8Def08506a6b2756`)
-- Plan to migrate to a custom ERC-721 contract for full control
-- Governance and token mechanics will be modular and extensible
-- All metadata hosted via IPFS or Arweave for immutability
+- Trophy NFTs are minted via custom ERC-721 contracts on **Polygon Amoy Testnet** (Chain ID: `80002`, Currency: `POL`)
+- All metadata is hosted via **IPFS (Pinata)** for immutability and CID tracking
+- Trophy minting flow is fully automated and tracked via registry
 - Front-end will include:
   - Voting dashboard
   - AA-RON wallet
@@ -109,79 +121,33 @@ The Imperial Golf League is a hybrid sports DAO that operates from **May to Augu
 - Multi-chain support (Polygon, Base, etc.)
 - Dynamic NFT traits based on gameplay
 - Real-world event integration and sponsorships
+- Arweave support for archival redundancy
 
 ---
 
 ## 🧑‍💻 Contributors
 
-- **Jason** - Visionary and Featureset PM
-- **Dan** — Systems Architect, Blockchain/Game Strategist
+- **Jason** — Visionary and Featureset PM  
+- **Dan** — Systems Architect, Blockchain/Game Strategist  
 - **Copilot** — AI Companion & Technical Collaborator
 
 ---
 
-##  GIT Layout
+## 🗂️ Git Layout
 
-- **dev** - Local testing, contract logic using hardhat local
-- **testnet** - QA, UI/UX, Gameplay simulation using Mumbai
-- **main** - Production-ready deployments using polygon
+- **dev** — Local testing, contract logic using Hardhat  
+- **testnet** — QA, trophy minting, DAO simulation using Polygon Amoy  
+- **main** — Production-ready deployments using Polygon PoS mainnet
 
 > This README is a living document. Updates will reflect new seasons, contract deployments, and governance decisions.
 
-# Sample Hardhat 3 Beta Project (`mocha` and `ethers`)
+---
 
-This project showcases a Hardhat 3 Beta project using `mocha` for tests and the `ethers` library for Ethereum interactions.
+## 🧪 Hardhat 3 Beta Project (`mocha` and `ethers`)
 
-To learn more about the Hardhat 3 Beta, please visit the [Getting Started guide](https://hardhat.org/docs/getting-started#getting-started-with-hardhat-3). To share your feedback, join our [Hardhat 3 Beta](https://hardhat.org/hardhat3-beta-telegram-group) Telegram group or [open an issue](https://github.com/NomicFoundation/hardhat/issues/new) in our GitHub issue tracker.
-
-## Project Overview
-
-This example project includes:
-
-- A simple Hardhat configuration file.
-- Foundry-compatible Solidity unit tests.
-- TypeScript integration tests using `mocha` and ethers.js
-- Examples demonstrating how to connect to different types of networks, including locally simulating OP mainnet.
-
-## Usage
+This project uses Hardhat 3 Beta for contract deployment and testing. All examples are adapted for Polygon Amoy compatibility and DAO simulation.
 
 ### Running Tests
 
-To run all the tests in the project, execute the following command:
-
-```shell
+```bash
 npx hardhat test
-```
-
-You can also selectively run the Solidity or `mocha` tests:
-
-```shell
-npx hardhat test solidity
-npx hardhat test mocha
-```
-
-### Make a deployment to Sepolia
-
-This project includes an example Ignition module to deploy the contract. You can deploy this module to a locally simulated chain or to Sepolia.
-
-To run the deployment to a local chain:
-
-```shell
-npx hardhat ignition deploy ignition/modules/Counter.ts
-```
-
-To run the deployment to Sepolia, you need an account with funds to send the transaction. The provided Hardhat configuration includes a Configuration Variable called `SEPOLIA_PRIVATE_KEY`, which you can use to set the private key of the account you want to use.
-
-You can set the `SEPOLIA_PRIVATE_KEY` variable using the `hardhat-keystore` plugin or by setting it as an environment variable.
-
-To set the `SEPOLIA_PRIVATE_KEY` config variable using `hardhat-keystore`:
-
-```shell
-npx hardhat keystore set SEPOLIA_PRIVATE_KEY
-```
-
-After setting the variable, you can run the deployment with the Sepolia network:
-
-```shell
-npx hardhat ignition deploy --network sepolia ignition/modules/Counter.ts
-```
