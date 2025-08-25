@@ -1,17 +1,17 @@
 import { expect } from "chai";
-import { network } from "hardhat";
-
-const { ethers } = await network.connect();
+import { ethers } from "hardhat";
 
 describe("Counter", function () {
   it("Should emit the Increment event when calling the inc() function", async function () {
-    const counter = await ethers.deployContract("Counter");
+    const Counter = await ethers.getContractFactory("Counter");
+    const counter = await Counter.deploy();
 
     await expect(counter.inc()).to.emit(counter, "Increment").withArgs(1n);
   });
 
   it("The sum of the Increment events should match the current value", async function () {
-    const counter = await ethers.deployContract("Counter");
+    const Counter = await ethers.getContractFactory("Counter");
+    const counter = await Counter.deploy();
     const deploymentBlockNumber = await ethers.provider.getBlockNumber();
 
     // run a series of increments
@@ -22,7 +22,7 @@ describe("Counter", function () {
     const events = await counter.queryFilter(
       counter.filters.Increment(),
       deploymentBlockNumber,
-      "latest",
+      "latest"
     );
 
     // check that the aggregated events match the current value
