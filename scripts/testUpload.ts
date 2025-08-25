@@ -1,13 +1,11 @@
 import { create } from '@web3-storage/w3up-client';
-import { File } from 'web3.storage';
 import dotenv from 'dotenv';
 import fs from 'fs';
-import path from 'path';
 import { Buffer } from 'buffer';
 
 dotenv.config();
 
-async function testUpload() {
+async function uploadMetadataCAR() {
   const client = await create();
   console.log('🔑 Agent DID:', client.agent.did());
 
@@ -18,21 +16,18 @@ async function testUpload() {
   await client.addProof(proofBytes as any);
   await client.setCurrentSpace(spaceDID);
 
-  // ✅ Load file from disk and construct a valid File object
-  const filePath = path.resolve('test.txt');
-  const fileData = fs.readFileSync(filePath);
-  const file = new File([fileData], 'test.txt', { type: 'text/plain' });
+  const carBytes = fs.readFileSync('./assets/2025ChampionMetadata.car');
 
   try {
-    const cid = await client.uploadFile(file);
-    console.log('✅ Upload successful. CID:', cid);
-    console.log(`🔗 ipfs://${cid}/test.txt`);
+    const cid = await client.uploadCAR(carBytes);
+    console.log('✅ Metadata uploaded. CID:', cid);
+    console.log(`🔗 ipfs://${cid}/2025ChampionMetadata.json`);
   } catch (err: any) {
     console.error('❌ Upload failed:', err.message);
     console.error(err.stack);
   }
 }
 
-testUpload().catch((err) => {
+uploadMetadataCAR().catch((err) => {
   console.error('❌ Script error:', err.message);
 });

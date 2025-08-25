@@ -1,0 +1,9 @@
+{
+  "name": "2025 Champion Trophy",
+  "description": "Awarded to Jason A. Kruk",
+  "image": "ipfs://bafybeibt.../2025ChampionTrophy.png",
+  "attributes": [
+    { "trait_type": "Season", "value": "2025" },
+    { "trait_type": "Tier", "value": "Champion" }
+  ]
+}
