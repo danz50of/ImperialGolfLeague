@@ -25,10 +25,11 @@ async function uploadCar(filePath: string) {
   //const carBlob = new FetchBlob([carBytes], { type: 'application/car' });
   
   
-  const carBlob = new Blob([carBytes], { type: 'application/car' });
+  //const carBlob = new Blob([carBytes], { type: 'application/car' });
 
   try {
-    const cid = await client.uploadCAR(carBlob);
+    //const cid = await client.uploadCAR(carBlob);
+    const cid = await client.uploadCAR(new Uint8Array(carBytes));
     console.log('✅ Upload successful');
     console.log('📦 File:', path.basename(filePath));
     console.log('🆔 CID:', cid);
