@@ -2,13 +2,22 @@ import { create } from '@web3-storage/w3up-client';
 import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
-import { Blob } from 'buffer';
+import { Readable } from 'stream';
 
 dotenv.config();
 
+// Helper to wrap a Buffer in a BlobLike-compatible object
+function bufferToBlobLike(buffer: Buffer) {
+  return {
+    size: buffer.length,
+    type: 'application/car',
+    stream() {
+      return Readable.from(buffer) as any as ReadableStream<Uint8Array>;
+    }
+  };
+}
+
 async function uploadCar(filePath: string) {
-  //const { default: FetchBlob } = await import('fetch-blob'); // ✅ Dynamic ESM import
-  //const { Blob } = await import('fetch-blob');
   const client = await create();
   console.log('🔑 Agent DID:', client.agent.did());
 
@@ -21,11 +30,7 @@ async function uploadCar(filePath: string) {
 
   const resolvedPath = path.resolve(filePath);
   const carBytes = fs.readFileSync(resolvedPath);
-
-  //const carBlob = new FetchBlob([carBytes], { type: 'application/car' });
-  
-  
-  const carBlob = new Blob([carBytes], { type: 'application/car' });
+  const carBlob = bufferToBlobLike(carBytes);
 
   try {
     const cid = await client.uploadCAR(carBlob);

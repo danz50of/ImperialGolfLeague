@@ -2,11 +2,50 @@
 
 This registry tracks all trophy assets planned for each season. Each entry includes the IPFS CID for both the image and metadata, filename, and minting status.
 
-| Season | Trophy Name           | Image CID                                | Metadata CID                                | Filename                     | Minted |
-|--------|-----------------------|-------------------------------------------|---------------------------------------------|------------------------------|--------|
-| 2025   | Champion Trophy       | bafybeibtj2on4nzvrrlt77drmhhr5plyicwzxftkib4ku6jddfentnvmiu      | bafybeie4s2o6elvp6apk3lrg5c4kszpzwnolocqe3jd2vdllfo7hpgmahu         | 2025ChampionTrophy.png       | ❌     |
-| 2025   | Longest Yard Award    | (pending)                                 | (pending)                                    | longestYard.png              | ❌     |
-| 2025   | MVP Trophy            | (pending)                                 | (pending)                                    | MVP2025.png                  | ❌     |
+---
+
+### 🏆 2025 Champion Trophy
+
+- **Season**: 2025  
+- **Trophy Name**: Champion Trophy  
+- **Image Filename**: `2025ChampionTrophy.png`  
+- **Image CID**: `QmS9pW6KRE7CtMVyTaq7Jf6YnLCmwU83uwo9MamuhA23b2`  
+- **Image URI**: `ipfs://QmS9pW6KRE7CtMVyTaq7Jf6YnLCmwU83uwo9MamuhA23b2/2025ChampionTrophy.png`  
+- **Metadata Filename**: `2025ChampionMetaData.json`  
+- **Metadata CID**: `QmQ5QHfY79dGxgBMdMFJn8DWqXb2FetWHpqYekppkooJwd`  
+- **Metadata URI**: `ipfs://QmQ5QHfY79dGxgBMdMFJn8DWqXb2FetWHpqYekppkooJwd/2025ChampionMetaData.json`  
+- **Upload Date**: August 25, 2025  
+- **Mint Status**: ⏳ Uploaded, not yet minted
+
+---
+
+### 🏆 2025 Longest Yard Award
+
+- **Season**: 2025  
+- **Trophy Name**: Longest Yard Award  
+- **Image Filename**: `longestYard.png`  
+- **Image CID**: _(pending)_  
+- **Image URI**: _(pending)_  
+- **Metadata Filename**: `longestYardMetaData.json` _(pending)_  
+- **Metadata CID**: _(pending)_  
+- **Metadata URI**: _(pending)_  
+- **Upload Date**: _(pending)_  
+- **Mint Status**: ❌ Asset not yet uploaded
+
+---
+
+### 🏆 2025 MVP Trophy
+
+- **Season**: 2025  
+- **Trophy Name**: MVP Trophy  
+- **Image Filename**: `MVP2025.png`  
+- **Image CID**: _(pending)_  
+- **Image URI**: _(pending)_  
+- **Metadata Filename**: `MVP2025MetaData.json` _(pending)_  
+- **Metadata CID**: _(pending)_  
+- **Metadata URI**: _(pending)_  
+- **Upload Date**: _(pending)_  
+- **Mint Status**: ❌ Asset not yet uploaded
 
 ---
 

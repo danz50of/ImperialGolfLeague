@@ -22,6 +22,7 @@
     "@ucanto/core": "^10.4.0",
     "@web3-storage/access": "^20.3.0",
     "@web3-storage/w3up-client": "^17.3.0",
+    "fetch-blob": "^4.0.0",
     "web3.storage": "^4.5.5"
   },
   "scripts": {
