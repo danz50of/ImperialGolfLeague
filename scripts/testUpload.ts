@@ -18,7 +18,7 @@ async function testUpload() {
   await client.addProof(proofBytes as any);
   await client.setCurrentSpace(spaceDID);
 
-  // ✅ Load file from disk
+  // ✅ Load file from disk and construct a valid File object
   const filePath = path.resolve('test.txt');
   const fileData = fs.readFileSync(filePath);
   const file = new File([fileData], 'test.txt', { type: 'text/plain' });
