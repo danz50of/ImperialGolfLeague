@@ -6,34 +6,44 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-async function uploadToPinata(filePath: string) {
-  const resolvedPath = path.resolve(filePath);
-  const fileStream = fs.createReadStream(resolvedPath);
-  const fileName = path.basename(filePath);
+const folderPath = './assets/2025Champion'; // 👈 Update this path as needed
 
+async function uploadFolderToPinata(folderPath: string) {
+  const resolvedFolderPath = path.resolve(folderPath);
   const form = new FormData();
-  form.append('file', fileStream, fileName); // ✅ Include filename explicitly
+
+  const files = fs.readdirSync(resolvedFolderPath);
+  for (const file of files) {
+    const filePath = path.join(resolvedFolderPath, file);
+    const fileStream = fs.createReadStream(filePath);
+
+    // 👇 This preserves folder structure in IPFS
+    form.append('file', fileStream, {
+      filepath: `2025Champion/${file}`, // 👈 Folder name inside IPFS
+    });
+  }
 
   try {
     const response = await axios.post('https://api.pinata.cloud/pinning/pinFileToIPFS', form, {
-      maxBodyLength: Infinity, // ✅ Prevents Axios from choking on large files
+      maxBodyLength: Infinity,
       headers: {
-        ...form.getHeaders(), // ✅ Includes correct Content-Type with boundary
+        ...form.getHeaders(),
         pinata_api_key: process.env.PINATA_API_KEY!,
-        pinata_secret_api_key: process.env.PINATA_SECRET_API_KEY!
-      }
+        pinata_secret_api_key: process.env.PINATA_SECRET_API_KEY!,
+      },
     });
 
     const cid = response.data.IpfsHash;
-    console.log('✅ Upload successful');
-    console.log('🆔 CID:', cid);
-    console.log(`🔗 ipfs://${cid}/${fileName}`);
+    console.log('✅ Folder upload successful');
+    console.log('🆔 Root CID:', cid);
+    console.log(`🔗 Metadata URI: ipfs://${cid}/2025Champion/metadata.json`);
+    console.log(`🖼️ Image URI: ipfs://${cid}/2025Champion/trophy.png`);
   } catch (err: any) {
     console.error('❌ Upload failed:', err.message);
     console.error(err.response?.data || err.stack);
   }
 }
 
-uploadToPinata(process.argv[2]).catch((err) => {
+uploadFolderToPinata(folderPath).catch((err) => {
   console.error('❌ Script error:', err.message);
 });
