@@ -22,4 +22,4 @@ async function main() {
 main().catch((error) => {
   console.error("❌ Minting failed:", error.message);
   process.exitCode = 1;
-});s
+});
