@@ -1,0 +1,22 @@
+body {
+  font-family: sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  text-align: center;
+  padding: 2rem;
+}
+
+header, footer {
+  margin-bottom: 2rem;
+}
+
+img {
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.meta {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
