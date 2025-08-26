@@ -79,6 +79,19 @@ The Imperial Golf League is a hybrid sports DAO that operates from **May to Augu
 
 ---
 
+## 🏆 Trophy Registry
+
+All trophy assets are tracked via a Markdown + JSON registry. Each entry includes:
+
+- Trophy name and season
+- IPFS CID for image and metadata
+- Minting status and token ID
+- Chain reference (e.g., Polygon Amoy Testnet)
+
+This registry supports DAO governance, seasonal storytelling, and legacy tracking.
+
+---
+
 ## 📱 Gameplay Integration
 
 - **Play Golf → Earn AA-RON**
@@ -91,10 +104,9 @@ The Imperial Golf League is a hybrid sports DAO that operates from **May to Augu
 
 ## 🛠️ Development Notes
 
-- Initial trophy NFT minted via OpenSea’s shared SeaDrop contract (`0xFF33BF842fCCb0784370f04E8Def08506a6b2756`)
-- Plan to migrate to a custom ERC-721 contract for full control
-- Governance and token mechanics will be modular and extensible
-- All metadata hosted via IPFS or Arweave for immutability
+- Trophy NFTs are minted via custom ERC-721 contracts on **Polygon Amoy Testnet** (Chain ID: `80002`, Currency: `POL`)
+- All metadata is hosted via **IPFS (Pinata)** for immutability and CID tracking
+- Trophy minting flow is fully automated and tracked via registry
 - Front-end will include:
   - Voting dashboard
   - AA-RON wallet
@@ -109,15 +121,33 @@ The Imperial Golf League is a hybrid sports DAO that operates from **May to Augu
 - Multi-chain support (Polygon, Base, etc.)
 - Dynamic NFT traits based on gameplay
 - Real-world event integration and sponsorships
+- Arweave support for archival redundancy
 
 ---
 
 ## 🧑‍💻 Contributors
 
-- **Jason** - Visionary and Featureset PM
-- **Dan** — Systems Architect, Blockchain/Game Strategist
+- **Jason** — Visionary and Featureset PM  
+- **Dan** — Systems Architect, Blockchain/Game Strategist  
 - **Copilot** — AI Companion & Technical Collaborator
 
 ---
 
+## 🗂️ Git Layout
+
+- **dev** — Local testing, contract logic using Hardhat  
+- **testnet** — QA, trophy minting, DAO simulation using Polygon Amoy  
+- **main** — Production-ready deployments using Polygon PoS mainnet
+
 > This README is a living document. Updates will reflect new seasons, contract deployments, and governance decisions.
+
+---
+
+## 🧪 Hardhat 3 Beta Project (`mocha` and `ethers`)
+
+This project uses Hardhat 3 Beta for contract deployment and testing. All examples are adapted for Polygon Amoy compatibility and DAO simulation.
+
+### Running Tests
+
+```bash
+npx hardhat test
