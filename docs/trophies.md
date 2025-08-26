@@ -15,6 +15,12 @@ This registry tracks all trophy assets planned for each season. Each entry inclu
 - **Metadata CID**: `QmQ5QHfY79dGxgBMdMFJn8DWqXb2FetWHpqYekppkooJwd`  
 - **Metadata URI**: `ipfs://QmQ5QHfY79dGxgBMdMFJn8DWqXb2FetWHpqYekppkooJwd/2025ChampionMetaData.json`  
 - **Upload Date**: August 25, 2025  
+- **Contract**: AchievementNFT
+- **Chain**: Polygon Amoy
+- **Address**: 0xd0B87C0B2CF9509ef09e73654D6E2F250B90b03c
+- **Deployed By**: Dan
+- **Timestamp**: 2025-08-25
+- **Status**: ✅ Deployed
 - **Mint Status**: ⏳ Uploaded, not yet minted
 
 ---

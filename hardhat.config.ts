@@ -31,10 +31,11 @@ const config: HardhatUserConfig = {
     hardhat: {
       chainId: 31337
     },
-//    mumbai: {
-//      url: `https://polygon-mumbai.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`,
-//      accounts: [`0x${process.env.PRIVATE_KEY}`],
-//    },
+    amoy: {
+    url: "https://80002.rpc.thirdweb.com", // or another stable RPC
+    chainId: 80002,
+    accounts: [process.env.AMOY_PRIVATE_KEY as string],
+  },
 //    polygon: {
 //      url: `https://polygon-mainnet.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`,
 //      accounts: [`0x${process.env.PRIVATE_KEY}`],
