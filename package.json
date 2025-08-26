@@ -1,0 +1,43 @@
+{
+  "name": "imperialgolfleague",
+  "version": "1.0.0",
+  "description": "Imperial Golf League Protocol: a seasonal, tokenized golf ecosystem combining real-world play, mobile gameplay, NFT utility, and decentralized governance.",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "@types/chai": "^4.3.20",
+    "@types/chai-as-promised": "^8.0.2",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.17.2",
+    "chai": "^4.3.7",
+    "dotenv": "^17.2.1",
+    "ethers": "^6.15.0",
+    "hardhat": "^2.26.0",
+    "mocha": "^11.7.1",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.8.0"
+  },
+  "dependencies": {
+    "@ipld/car": "^5.4.2",
+    "@openzeppelin/contracts": "^5.4.0",
+    "@ucanto/core": "^10.4.0",
+    "@web3-storage/access": "^20.3.0",
+    "@web3-storage/w3up-client": "^17.3.0",
+    "fetch-blob": "^4.0.0",
+    "web3.storage": "^4.5.5"
+  },
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "deploy:local": "npx hardhat run scripts/deployAchievementNFT.ts --network localhost",
+    "deploy:mumbai": "npx hardhat run scripts/deployAchievementNFT.ts --network mumbai",
+    "test": "npx hardhat test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danz50of/ImperialGolfLeague.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danz50of/ImperialGolfLeague/issues"
+  },
+  "homepage": "https://github.com/danz50of/ImperialGolfLeague#readme",
+  "license": "ISC"
+}
