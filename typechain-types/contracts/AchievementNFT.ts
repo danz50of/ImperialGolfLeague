@@ -28,6 +28,7 @@ export interface AchievementNFTInterface extends Interface {
     nameOrSignature:
       | "approve"
       | "balanceOf"
+      | "currentTokenId"
       | "getApproved"
       | "getNextTokenId"
       | "isApprovedForAll"
@@ -63,6 +64,10 @@ export interface AchievementNFTInterface extends Interface {
   encodeFunctionData(
     functionFragment: "balanceOf",
     values: [AddressLike]
+  ): string;
+  encodeFunctionData(
+    functionFragment: "currentTokenId",
+    values?: undefined
   ): string;
   encodeFunctionData(
     functionFragment: "getApproved",
@@ -122,6 +127,10 @@ export interface AchievementNFTInterface extends Interface {
 
   decodeFunctionResult(functionFragment: "approve", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "balanceOf", data: BytesLike): Result;
+  decodeFunctionResult(
+    functionFragment: "currentTokenId",
+    data: BytesLike
+  ): Result;
   decodeFunctionResult(
     functionFragment: "getApproved",
     data: BytesLike
@@ -323,6 +332,8 @@ export interface AchievementNFT extends BaseContract {
 
   balanceOf: TypedContractMethod<[owner: AddressLike], [bigint], "view">;
 
+  currentTokenId: TypedContractMethod<[], [bigint], "view">;
+
   getApproved: TypedContractMethod<[tokenId: BigNumberish], [string], "view">;
 
   getNextTokenId: TypedContractMethod<[], [bigint], "view">;
@@ -406,6 +417,9 @@ export interface AchievementNFT extends BaseContract {
   getFunction(
     nameOrSignature: "balanceOf"
   ): TypedContractMethod<[owner: AddressLike], [bigint], "view">;
+  getFunction(
+    nameOrSignature: "currentTokenId"
+  ): TypedContractMethod<[], [bigint], "view">;
   getFunction(
     nameOrSignature: "getApproved"
   ): TypedContractMethod<[tokenId: BigNumberish], [string], "view">;
