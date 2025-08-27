@@ -20,4 +20,7 @@ contract AchievementNFT is ERC721URIStorage, Ownable {
     function getNextTokenId() external view returns (uint256) {
         return _tokenIdCounter;
     }
+    function currentTokenId() external view returns (uint256) {
+    return _tokenIdCounter - 1;
+}
 }
