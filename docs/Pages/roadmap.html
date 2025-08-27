@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imperial Golf League Roadmap</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      margin: 2rem;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li::before {
+      content: "• ";
+      color: #3498db;
+    }
+    .completed::before {
+      content: "✅ ";
+      color: green;
+    }
+    .pending::before {
+      content: "⏳ ";
+      color: orange;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      text-align: left;
+    }
+    th {
+      background-color: #eee;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🏌️‍♂️ Imperial Golf League – Full Roadmap</h1>
+
+  <h2>🧱 Phase 1: Core Smart Contract & Trophy Minting</h2>
+  <ul>
+    <li class="completed">AchievementNFT.sol contract created and compiled</li>
+    <li class="completed">Local Hardhat deployment verified</li>
+    <li class="completed">Mint script executed and confirmed</li>
+    <li class="completed">Metadata pinned to IPFS</li>
+    <li class="completed">View functions (currentTokenId, ownerOf) added</li>
+    <li class="completed">Trophy registry markdown drafted</li>
+    <li class="pending">Deploy contract to Amoy testnet</li>
+    <li class="pending">Add getAchievements(address) view function</li>
+  </ul>
+
+  <h2>🎮 Phase 2: Gameplay Logic & Event System</h2>
+  <ul>
+    <li class="pending">Match lifecycle (start, score, end)</li>
+    <li class="pending">Player registration & identity</li>
+    <li class="pending">Scoring engine (hole-by-hole)</li>
+    <li class="pending">Trophy triggers (Hole-in-One, MVP)</li>
+    <li class="pending">Game history archive</li>
+    <li class="pending">Frontend dashboard (React or Next.js)</li>
+  </ul>
+
+  <h2>🏛️ Phase 3: Governance & DAO Integration</h2>
+  <ul>
+    <li class="pending">Commissioner role gating</li>
+    <li class="pending">DAO proposal system</li>
+    <li class="pending">Voting logic (ERC20 or ERC721-based)</li>
+    <li class="pending">Treasury integration</li>
+    <li class="pending">Governance documentation</li>
+  </ul>
+
+  <h2>📦 Phase 4: Infrastructure & DevOps</h2>
+  <ul>
+    <li class="completed">GitHub project structure scaffolded</li>
+    <li class="pending">CI/CD pipeline (optional)</li>
+    <li class="completed">IPFS pinning strategy confirmed</li>
+    <li class="pending">Markdown registry automation</li>
+    <li class="pending">Internal wiki & SOPs</li>
+  </ul>
+
+  <h2>🧭 Phase 5: Expansion & Legacy</h2>
+  <ul>
+    <li class="pending">Multi-season trophy support</li>
+    <li class="pending">Player stats & analytics</li>
+    <li class="pending">Mobile-friendly frontend</li>
+    <li class="pending">Public explorer integration</li>
+    <li class="pending">Community onboarding flow</li>
+  </ul>
+
+  <h2>🗓️ Suggested Sprint Breakdown</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Sprint</th>
+        <th>Focus</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Sprint 1</td>
+        <td>Amoy deploy, getAchievements, registry checkpoint</td>
+      </tr>
+      <tr>
+        <td>Sprint 2</td>
+        <td>Match lifecycle, scoring engine, frontend prototype</td>
+      </tr>
+      <tr>
+        <td>Sprint 3</td>
+        <td>Commissioner gating, DAO proposal logic</td>
+      </tr>
+      <tr>
+        <td>Sprint 4</td>
+        <td>Treasury setup, governance SOPs, CI/CD</td>
+      </tr>
+      <tr>
+        <td>Sprint 5</td>
+        <td>Trophy expansion, player stats, mobile UI</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
