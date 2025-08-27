@@ -8,19 +8,19 @@ This registry tracks all trophy assets planned for each season. Each entry inclu
 
 - **Season**: 2025  
 - **Trophy Name**: Champion Trophy  
-- **Image Filename**: `2025ChampionTrophy.png`  
-- **Image CID**: `QmS9pW6KRE7CtMVyTaq7Jf6YnLCmwU83uwo9MamuhA23b2`  
-- **Image URI**: `ipfs://QmS9pW6KRE7CtMVyTaq7Jf6YnLCmwU83uwo9MamuhA23b2/2025ChampionTrophy.png`  
-- **Metadata Filename**: `2025ChampionMetaData.json`  
-- **Metadata CID**: `QmQ5QHfY79dGxgBMdMFJn8DWqXb2FetWHpqYekppkooJwd`  
-- **Metadata URI**: `ipfs://QmQ5QHfY79dGxgBMdMFJn8DWqXb2FetWHpqYekppkooJwd/2025ChampionMetaData.json`  
+- **Image Filename**: `trophy.png`  
+- **Image CID**: `QmSWRXi4aoSiZLb9z923x2WchCnvBYhcyDw52tC1KQ9hp6`  
+- **Image URI**: `ipfs://QmSWRXi4aoSiZLb9z923x2WchCnvBYhcyDw52tC1KQ9hp6/2025Champion/trophy.png`  
+- **Metadata Filename**: `metadata.json`  
+- **Metadata CID**: `QmSWRXi4aoSiZLb9z923x2WchCnvBYhcyDw52tC1KQ9hp6`  
+- **Metadata URI**: `ipfs://QmSWRXi4aoSiZLb9z923x2WchCnvBYhcyDw52tC1KQ9hp6/2025Champion/metadata.json`  
 - **Upload Date**: August 25, 2025  
-- **Contract**: AchievementNFT
-- **Chain**: Polygon Amoy
-- **Address**: 0xd0B87C0B2CF9509ef09e73654D6E2F250B90b03c
-- **Deployed By**: Dan
-- **Timestamp**: 2025-08-25
-- **Status**: ✅ Deployed
+- **Contract**: AchievementNFT  
+- **Chain**: Polygon Amoy  
+- **Address**: `0xd0B87C0B2CF9509ef09e73654D6E2F250B90b03c`  
+- **Deployed By**: Dan  
+- **Timestamp**: 2025-08-25  
+- **Status**: ✅ Deployed  
 - **Mint Status**: ⏳ Uploaded, not yet minted
 
 ---
