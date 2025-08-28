@@ -1,0 +1,11 @@
+{
+  "name": "2025 Season – Angela Coster",
+  "description": "Participation NFT for the 2025 Imperial Golf League season.",
+  "image": "ipfs://bafkreigoykdanzo63m2vulo5obyn44x3klfl57f4ndw4t5lku55qm2ejqu",
+  "attributes": [
+    { "trait_type": "Season", "value": "2025" },
+    { "trait_type": "Type", "value": "Physical" },
+    { "trait_type": "Player", "value": "Angela Coster" },
+    { "trait_type": "Tagline", "value": "A hope and a prayer." }
+  ]
+}

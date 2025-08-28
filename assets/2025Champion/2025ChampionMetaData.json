@@ -1,9 +1,12 @@
 {
   "name": "2025 Inaugural Season Champion Trophy",
   "description": "Awarded to Jason A. Kruk",
-  "image": "ipfs://bafybeibtj2on4nzvrrlt77drmhhr5plyicwzxftkib4ku6jddfentnvmiu/2025ChampionTrophy.png",
+  "image": "ipfs://bafybeigjwzovez3sqwkajykxegemgwz7rlnv4gm5ndpbrmyioeir6atrc4",
   "attributes": [
     { "trait_type": "Season", "value": "2025" },
-    { "trait_type": "Tier", "value": "Champion" }
+    { "trait_type": "Tier", "value": "Champion" },
+    { "trait_type": "Type", "value": "Physical" },
+    { "trait_type": "Player", "value": "Jason A. Kruk" },
+    { "trait_type": "Tagline", "value": "A hope and a prayer." }
   ]
 }
