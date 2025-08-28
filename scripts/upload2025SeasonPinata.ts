@@ -1,4 +1,4 @@
-/*  Uploaded trophy to CDN */
+/*  Uploaded 2025 Season NFT Files to CDN */
 
 import axios from 'axios';
 import FormData from 'form-data';
@@ -8,7 +8,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const folderPath = './assets/2025Champion'; // 👈 Update this path as needed
+const folderPath = './assets/2025SeasonNFT'; // 👈 Update this path as needed
 
 async function uploadFolderToPinata(folderPath: string) {
   const resolvedFolderPath = path.resolve(folderPath);
@@ -21,7 +21,7 @@ async function uploadFolderToPinata(folderPath: string) {
 
     // 👇 This preserves folder structure in IPFS
     form.append('file', fileStream, {
-      filepath: `2025Champion/${file}`, // 👈 Folder name inside IPFS
+      filepath: `${file}`, // 👈 Folder name inside IPFS
     });
   }
 
@@ -38,8 +38,8 @@ async function uploadFolderToPinata(folderPath: string) {
     const cid = response.data.IpfsHash;
     console.log('✅ Folder upload successful');
     console.log('🆔 Root CID:', cid);
-    console.log(`🔗 Metadata URI: ipfs://${cid}/2025Champion/metadata.json`);
-    console.log(`🖼️ Image URI: ipfs://${cid}/2025Champion/trophy.png`);
+  //  console.log(`🔗 Metadata URI: ipfs://${cid}/2025Champion/metadata.json`);
+  //  console.log(`🖼️ Image URI: ipfs://${cid}/2025Champion/trophy.png`);
   } catch (err: any) {
     console.error('❌ Upload failed:', err.message);
     console.error(err.response?.data || err.stack);
