@@ -3,3 +3,4 @@
 /* eslint-disable */
 export { AchievementNFT__factory } from "./AchievementNFT__factory";
 export { Counter__factory } from "./Counter__factory";
+export { SeasonalNFT__factory } from "./SeasonalNFT__factory";
