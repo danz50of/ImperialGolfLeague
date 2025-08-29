@@ -163,3 +163,13 @@ This project uses Hardhat 3 Beta for contract deployment and testing. All exampl
 
 - npx hardhat run scripts/deploySeasonalNFT.ts --network amoy
 - npx hardhat run scritps/deployAchievementNFT.ts --network amoy
+
+==============================
+🚀 Verify Contract on Amoy
+==============================
+
+Command format:
+npx hardhat verify --network amoy <contract_address> <constructor_args>
+
+Example:
+npx hardhat verify --network amoy 0x5934b27939715a8eF6dc400f4c15E330d7dF7438 "0xE2DC81182eEb74e5472d8244cc9b8cDD4e2a78bE"
