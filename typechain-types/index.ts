@@ -38,3 +38,5 @@ export type { AchievementNFT } from "./contracts/AchievementNFT";
 export { AchievementNFT__factory } from "./factories/contracts/AchievementNFT__factory";
 export type { Counter } from "./contracts/Counter";
 export { Counter__factory } from "./factories/contracts/Counter__factory";
+export type { SeasonalNFT } from "./contracts/SeasonalNFT";
+export { SeasonalNFT__factory } from "./factories/contracts/SeasonalNFT__factory";
