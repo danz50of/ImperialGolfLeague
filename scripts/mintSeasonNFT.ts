@@ -2,7 +2,7 @@ import { ethers } from "hardhat";
 import hre from "hardhat";
 
 async function main() {
-  const contractAddress = "0xYourDeployedContractAddress"; // 👈 Replace with actual deployed address
+  const contractAddress = "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0"; // 👈 Replace with actual deployed address
   const seasonYear = 2025;
   const seasonType = "physical";
 
