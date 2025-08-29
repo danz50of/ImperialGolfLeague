@@ -1,5 +1,6 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
+import "@nomicfoundation/hardhat-verify";
 import dotenv from "dotenv";
 
 dotenv.config();
@@ -36,7 +37,7 @@ const config: HardhatUserConfig = {
     chainId: 31337
     },
     amoy: {
-    url: "https://80002.rpc.thirdweb.com", // or another stable RPC
+    url: process.env.AMOY_RPC, // or another stable RPC
     chainId: 80002,
     accounts: [process.env.AMOY_PRIVATE_KEY as string],
   },

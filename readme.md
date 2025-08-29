@@ -161,5 +161,5 @@ This project uses Hardhat 3 Beta for contract deployment and testing. All exampl
 
 ### Scripts and their order of operations
 
-- npx hardhat run scripts/deploySeasonalNFT.ts
-- npx hardhat run scritps/deployAchievementNFT.ts
+- npx hardhat run scripts/deploySeasonalNFT.ts --network amoy
+- npx hardhat run scritps/deployAchievementNFT.ts --network amoy
