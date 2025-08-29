@@ -15,7 +15,7 @@ contract SeasonalNFT is ERC721URIStorage, Ownable {
 
     mapping(uint256 => SeasonInfo) public seasonMetadata;
 
-    constructor() ERC721("ImperialGolfSeason", "IGS") {}
+    constructor(address initialOwner) ERC721("ImperialGolfSeason", "IGS") Ownable(initialOwner) {}
 
     function mintSeasonNFT(
         address to,
@@ -52,11 +52,14 @@ contract SeasonalNFT is ERC721URIStorage, Ownable {
     }
 
     function currentTokenId() external view returns (uint256) {
-        return _tokenIdCounter - 1;
+    if (_tokenIdCounter == 0) {
+        return 0;
     }
+    return _tokenIdCounter - 1;
+}
 
     function getSeasonInfo(uint256 tokenId) external view returns (SeasonInfo memory) {
-        require(_exists(tokenId), "Token does not exist");
+        address owner = ownerOf(tokenId); // will revert if token doesn't exist
         return seasonMetadata[tokenId];
     }
 }

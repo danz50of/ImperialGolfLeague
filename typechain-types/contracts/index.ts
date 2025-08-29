@@ -3,3 +3,4 @@
 /* eslint-disable */
 export type { AchievementNFT } from "./AchievementNFT";
 export type { Counter } from "./Counter";
+export type { SeasonalNFT } from "./SeasonalNFT";
