@@ -149,5 +149,17 @@ This project uses Hardhat 3 Beta for contract deployment and testing. All exampl
 
 ### Running Tests
 
-```bash
-npx hardhat test
+
+## Scripts
+
+- Start test node:  npx hardhat node
+- Run deployScripts:  npx hardhat run scripts/deployContracts.ts --network localhost
+
+#     *******  Prepare testnet  *******
+##    *******  8-29-2025        *******
+##    *******  AMOY Protocal    *******
+
+### Scripts and their order of operations
+
+- npx hardhat run scripts/deploySeasonalNFT.ts
+- npx hardhat run scritps/deployAchievementNFT.ts
