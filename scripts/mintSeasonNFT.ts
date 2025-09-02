@@ -2,8 +2,8 @@ import { ethers } from "hardhat";
 import hre from "hardhat";
 
 async function main() {
-  const contractAddress = "0x62021953D6b235Cf4b527a7Ea5172ea608536De2"; // 👈 Replace with actual deployed address
-  const seasonYear = 2025;
+  const contractAddress = "0x8b029AB9172AEF9bd75EcefC9000C0c4897eBA2b"; // 👈 Replace with actual deployed address
+  const seasonYear = "2025";
   const seasonType = "physical";
 
   const recipients = [
@@ -55,6 +55,7 @@ async function main() {
 
   console.log(`🚀 Minting NFT for ${playerName} to ${recipient}...`);
 
+  try{
   const tx = await seasonalContract.mintSeasonNFT(
     recipient,
     tokenURI,
@@ -68,6 +69,10 @@ async function main() {
   console.log(`✅ Minted Season NFT to ${recipient}`);
   console.log(`🧾 Transaction hash: ${receipt.hash}`);
   console.log(`📥 Receipt status: ${receipt.status}`);
+} catch (error: any){console.error(' Mint failed for ${Receipient}:', error.message);
+
+}
+
 
   const tokenId = await seasonalContract.currentTokenId();
   console.log(`🏷️ Token ID: ${tokenId.toString()}`);

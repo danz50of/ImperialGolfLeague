@@ -28,13 +28,15 @@ This log tracks all deployed smart contracts across environments, including addr
 
 ### ⏳ SeasonalNFT
 - **Contract Name:** SeasonalNFT
-- **Address:** 0x62021953D6b235Cf4b527a7Ea5172ea608536De2
+- **Address:** 0x62021953D6b235Cf4b527a7Ea5172ea608536De2  8/29/2025
+- **Address:** 0x8b029AB9172AEF9bd75EcefC9000C0c4897eBA2b  9/2/2025
 - **Notes:** `[TO BE FILLED]`
 - **9-2-2025**   minted to test address
 
 ### ⏳ AchievementNFT
 - **Contract Name:** AchievementNFT
-- **Address:** 0x5934b27939715a8eF6dc400f4c15E330d7dF7438
+- **Address:** 0x5934b27939715a8eF6dc400f4c15E330d7dF7438  8/29/2025
+- **Address:** 0xffD4b59197582b439265e9C29828df74ae735346  9/2/2025
 - **Constructor Args:** `[TO BE FILLED]`
 - **Notes:** `[TO BE FILLED]`
 
