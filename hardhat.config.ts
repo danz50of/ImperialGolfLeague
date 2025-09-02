@@ -5,6 +5,9 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
+console.log("AMOY_RPC:", process.env.AMOY_RPC);
+console.log("AMOY_PRIVATE_KEY:", process.env.AMOY_PRIVATE_KEY);
+
 const config: HardhatUserConfig = {
   solidity: {
     compilers: [

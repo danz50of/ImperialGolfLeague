@@ -30,6 +30,7 @@ This log tracks all deployed smart contracts across environments, including addr
 - **Contract Name:** SeasonalNFT
 - **Address:** 0x62021953D6b235Cf4b527a7Ea5172ea608536De2
 - **Notes:** `[TO BE FILLED]`
+- **9-2-2025**   minted to test address
 
 ### ⏳ AchievementNFT
 - **Contract Name:** AchievementNFT
