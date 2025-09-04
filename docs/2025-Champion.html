@@ -12,7 +12,7 @@
   </header>
 
   <section>
-    <img src="https://gateway.pinata.cloud/ipfs/QmQ5QHfY79dGxgBMdMFJn8DWqXb2FetWHpqYekppkooJwd/2025Champion.png" alt="Champion Trophy" />
+    <img src="" alt="Champion Trophy" />
     <div class="meta">
       <p><strong>Token ID:</strong> 1</p>
       <p><strong>Recipient:</strong> 0xCHAMPION_WALLET_ADDRESS</p>
@@ -20,6 +20,39 @@
       <p><a href="https://www.oklink.com/amoy/address/0xd0B87C0B2CF9509ef09e73654D6E2F250B90b03c" target="_blank">View on Explorer</a></p>
     </div>
   </section>
+
+  <section id="champion-nft">
+  <h2>🏆 2025 Champion Trophy NFT</h2>
+  <div id="nft-viewer">
+    <p>Loading NFT metadata...</p>
+  </div>
+</section>
+
+<script>
+  const metadataURL = "https://blush-urgent-swordtail-261.mypinata.cloud/ipfs/bafkreig2ahkkez6usieg3m34otdyt7yovldpfubmbqivw5itpsufdzi7xe";
+
+  async function loadNFT() {
+    try {
+      const res = await fetch(metadataURL);
+      const data = await res.json();
+
+      const viewer = document.getElementById("nft-viewer");
+      viewer.innerHTML = `
+        <img src="${data.image}" alt="Champion Trophy" style="max-width:300px; border:1px solid #ccc;" />
+        <h3>${data.name}</h3>
+        <p>${data.description}</p>
+        <ul>
+          ${data.attributes.map(attr => `<li><strong>${attr.trait_type}:</strong> ${attr.value}</li>`).join("")}
+        </ul>
+      `;
+    } catch (err) {
+      document.getElementById("nft-viewer").innerHTML = "<p>Failed to load NFT metadata.</p>";
+      console.error("Metadata fetch error:", err);
+    }
+  }
+
+  loadNFT();
+</script>
 
   <footer>
     <p>🏌️‍♂️ Season: 2025 | Status: Minted</p>

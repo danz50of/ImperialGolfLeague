@@ -57,11 +57,16 @@ async function main() {
 
   try{
   const tx = await seasonalContract.mintSeasonNFT(
-    recipient,
-    tokenURI,
-    seasonYear,
-    seasonType,
-    playerName
+  recipient,
+  tokenURI,
+  seasonYear,
+  seasonType,
+  playerName,
+  {
+    gasLimit: 250000,
+    maxPriorityFeePerGas: ethers.parseUnits("33", "gwei"),
+    maxFeePerGas: ethers.parseUnits("33", "gwei")
+  }
   );
 
   const receipt = await tx.wait();
@@ -69,7 +74,7 @@ async function main() {
   console.log(`✅ Minted Season NFT to ${recipient}`);
   console.log(`🧾 Transaction hash: ${receipt.hash}`);
   console.log(`📥 Receipt status: ${receipt.status}`);
-} catch (error: any){console.error(' Mint failed for ${Receipient}:', error.message);
+} catch (error: any){console.error(' Mint failed for ${recipient}:', error.message);
 
 }
 
