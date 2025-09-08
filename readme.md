@@ -156,7 +156,7 @@ This project uses Hardhat 3 Beta for contract deployment and testing. All exampl
 - Run deployScripts:  npx hardhat run scripts/deployContracts.ts --network localhost
 
 #     *******  Prepare testnet  *******
-##    *******  8-29-2025        *******
+##    *******  9-02-2025        *******
 ##    *******  AMOY Protocal    *******
 
 ### Scripts and their order of operations
