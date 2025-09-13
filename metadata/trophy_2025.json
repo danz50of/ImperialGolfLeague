@@ -1,7 +1,7 @@
 {
   "name": "Imperial Golf League Trophy 2025",
   "description": "Awarded to the inaugural champion of the Imperial Golf League.",
-  "image": "ipfs://<CID-of-trophy-image>",
+  "image": "https://blush-urgent-swordtail-261.mypinata.cloud/ipfs/bafybeigjwzovez3sqwkajykxegemgwz7rlnv4gm5ndpbrmyioeir6atrc4",
   "attributes": [
     { "trait_type": "League", "value": "Imperial Golf League" },
     { "trait_type": "Year", "value": "2025" },
