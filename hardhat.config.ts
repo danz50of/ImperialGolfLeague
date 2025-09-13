@@ -44,10 +44,11 @@ const config: HardhatUserConfig = {
     chainId: 80002,
     accounts: [process.env.AMOY_PRIVATE_KEY as string],
   },
-//    polygon: {
-//      url: `https://polygon-mainnet.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`,
-//      accounts: [`0x${process.env.PRIVATE_KEY}`],
-//    },
+    polygon: {
+      url: process.env.POLYGON_RPC_URL,
+      chainId: 137,
+      accounts: [],
+    },
   },
   etherscan: {
     apiKey: process.env.POLYGONSCAN_API_KEY,
