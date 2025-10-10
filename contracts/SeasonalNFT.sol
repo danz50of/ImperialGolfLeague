@@ -15,7 +15,7 @@ contract SeasonalNFT is ERC721URIStorage, Ownable {
 
     mapping(uint256 => SeasonInfo) public seasonMetadata;
 
-    constructor(address initialOwner) ERC721("ImperialGolfSeason", "IGS") Ownable(initialOwner) {}
+    constructor(address initialOwner) ERC721("ImperialGolfSeason", "IGL-IGS") Ownable(initialOwner) {}
 
     function mintSeasonNFT(
         address to,

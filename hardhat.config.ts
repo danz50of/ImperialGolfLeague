@@ -1,12 +1,13 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 import "@nomicfoundation/hardhat-verify";
+import "@nomicfoundation/hardhat-ledger";
 import dotenv from "dotenv";
 
 dotenv.config();
 
-console.log("AMOY_RPC:", process.env.AMOY_RPC);
-console.log("AMOY_PRIVATE_KEY:", process.env.AMOY_PRIVATE_KEY);
+console.log("POLYGON_RPC_URL:", process.env.POLYGON_RPC_URL);
+console.log("PRIVATE_KEY:", process.env.PRIVATE_KEY);
 
 const config: HardhatUserConfig = {
   solidity: {
@@ -39,19 +40,14 @@ const config: HardhatUserConfig = {
     url: "http://127.0.0.1:8545",
     chainId: 31337
     },
-    amoy: {
-    url: process.env.AMOY_RPC, // or another stable RPC
-    chainId: 80002,
-    accounts: [process.env.AMOY_PRIVATE_KEY as string],
-  },
     polygon: {
-      url: process.env.POLYGON_RPC_URL,
-      chainId: 137,
-      accounts: [],
+      url: process.env.POLYGON_RPC_URL || "",
+      accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
+      chainId: Number(process.env.POLYGON_CHAIN_ID) || 137,
     },
   },
   etherscan: {
-    apiKey: process.env.POLYGONSCAN_API_KEY,
+    apiKey: process.env.POLYGONSCAN_API_KEY || "",
   },
 };
 
