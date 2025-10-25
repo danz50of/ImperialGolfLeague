@@ -2,30 +2,19 @@
 
 REPO="danz50of/ImperialGolfLeague"
 
-# Titles and descriptions as parallel arrays
-titles=(
-  "Phase 2: Player Registration & Identity Layer"
-  "Phase 3: Gameplay Logic & Event System"
-  "Phase 4: Governance & DAO Integration"
-  "Phase 5: Infrastructure & DevOps"
-  "Phase 6: Expansion & Legacy"
-)
+# -------------------------------
+# Phase 2: Player Registration & Identity Layer
+# -------------------------------
+gh issue create --repo "$REPO" --title "Wire dashboard to profile data" --body "Auto-generated issue for Phase 2." --label "identity" --milestone "Phase 2: Player Registration & Identity Layer"
+gh issue create --repo "$REPO" --title "Generate HTML profile pages" --body "Auto-generated issue for Phase 2." --label "identity" --milestone "Phase 2: Player Registration & Identity Layer"
 
-descriptions=(
-  "Wallet binding, profile schema, AARON token rewards"
-  "Match lifecycle, scoring engine, frontend prototype"
-  "Commissioner gating, DAO proposals, voting logic"
-  "CI/CD, markdown automation, internal SOPs"
-  "Multi-season support, stats, mobile UI, explorer"
-)
+# -------------------------------
+# Phase 3: Gameplay Logic & Event System
+# -------------------------------
+gh issue create --repo "$REPO" --title "Build frontend dashboard" --body "Auto-generated issue for Phase 3." --label "gameplay" --milestone "Phase 3: Gameplay Logic & Event System"
 
-# Loop through arrays
-for i in "${!titles[@]}"; do
-  title="${titles[$i]}"
-  description="${descriptions[$i]}"
-  echo "Creating milestone: $title"
-  gh api repos/$REPO/milestones \
-    --method POST \
-    --field title="$title" \
-    --field description="$description"
-done
+# -------------------------------
+# Phase 6: Expansion & Legacy
+# -------------------------------
+gh issue create --repo "$REPO" --title "Build mobile-friendly frontend" --body "Auto-generated issue for Phase 6." --label "mobile" --milestone "Phase 6: Expansion & Legacy"
+gh issue create --repo "$REPO" --title "Integrate public explorer" --body "Auto-generated issue for Phase 6." --label "explorer" --milestone "Phase 6: Expansion & Legacy"
