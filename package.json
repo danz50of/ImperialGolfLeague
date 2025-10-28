@@ -20,9 +20,11 @@
     "@ipld/car": "^5.4.2",
     "@openzeppelin/contracts": "^5.4.0",
     "@ucanto/core": "^10.4.0",
+    "@walletconnect/modal-react-native": "^1.1.0",
     "@web3-storage/access": "^20.3.0",
     "@web3-storage/w3up-client": "^17.3.0",
     "fetch-blob": "^4.0.0",
+    "react-native-svg": "^15.14.0",
     "web3.storage": "^4.5.5"
   },
   "scripts": {
