@@ -21,4 +21,48 @@
 .env
 *.car
 *.log
+# Node modules
+node_modules/
 
+# React Native build artifacts
+*.log
+*.lock
+*.tmp
+*.swp
+*.DS_Store
+.env
+.env.local
+.env.*.local
+
+# Metro bundler cache
+.cache/
+.expo/
+
+# iOS build artifacts
+ios/Pods/
+ios/Podfile.lock
+ios/build/
+ios/DerivedData/
+ios/*.xcworkspace
+ios/*.xcodeproj/project.xcworkspace/
+ios/*.xcodeproj/xcuserdata/
+
+# CocoaPods
+ios/Pods/
+ios/Podfile.lock
+
+# WalletConnect cache (if used)
+.walletconnect/
+
+# Xcode user data
+*.xcuserstate
+*.xcuserdata/
+
+# macOS system files
+.DS_Store
+
+# VSCode
+.vscode/
+
+# Optional: prevent committing generated assets
+src/assets/generated/
