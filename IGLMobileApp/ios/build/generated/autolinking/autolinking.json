@@ -496,9 +496,9 @@
     "ios": {
       "sourceDir": "/Users/danz50of/Documents/ImperialGolfLeague/IGLMobileApp/ios",
       "xcodeProject": {
-        "name": "IGLMobileApp.xcodeproj",
+        "name": "IGLMobileApp.xcworkspace",
         "path": ".",
-        "isWorkspace": false
+        "isWorkspace": true
       },
       "assets": []
     },
