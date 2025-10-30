@@ -1,0 +1,18 @@
+current directory: /Users/danz50of/Documents/ImperialGolfLeague/IGLMobileApp/vendor/bundle/ruby/3.4.0/gems/nkf-0.2.0/ext/nkf
+/opt/homebrew/opt/ruby/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/danz50of/Documents/ImperialGolfLeague/IGLMobileApp/vendor/bundle/ruby/3.4.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20251029-46659-shwvzg sitelibdir\=./.gem.20251029-46659-shwvzg clean
+
+current directory: /Users/danz50of/Documents/ImperialGolfLeague/IGLMobileApp/vendor/bundle/ruby/3.4.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20251029-46659-shwvzg sitelibdir\=./.gem.20251029-46659-shwvzg
+compiling nkf.c
+linking shared-object nkf.bundle
+
+current directory: /Users/danz50of/Documents/ImperialGolfLeague/IGLMobileApp/vendor/bundle/ruby/3.4.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20251029-46659-shwvzg sitelibdir\=./.gem.20251029-46659-shwvzg install
+/usr/bin/install -c -m 0755 nkf.bundle ./.gem.20251029-46659-shwvzg
+
+current directory: /Users/danz50of/Documents/ImperialGolfLeague/IGLMobileApp/vendor/bundle/ruby/3.4.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20251029-46659-shwvzg sitelibdir\=./.gem.20251029-46659-shwvzg clean

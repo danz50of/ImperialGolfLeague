@@ -4,6 +4,7 @@
   "description": "Imperial Golf League Protocol: a seasonal, tokenized golf ecosystem combining real-world play, mobile gameplay, NFT utility, and decentralized governance.",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "@react-native-community/cli": "^20.0.2",
     "@types/chai": "^4.3.20",
     "@types/chai-as-promised": "^8.0.2",
     "@types/mocha": "^10.0.10",
