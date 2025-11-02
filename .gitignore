@@ -21,5 +21,100 @@
 .env
 *.car
 *.log
+# Node modules
+node_modules/
 
+# React Native build artifacts
+*.log
+*.lock
+*.tmp
+*.swp
+*.DS_Store
 .env
+.env.local
+.env.*.local
+
+# Metro bundler cache
+.cache/
+.expo/
+
+# iOS build artifacts
+ios/Pods/
+ios/Podfile.lock
+ios/build/
+ios/DerivedData/
+ios/*.xcworkspace
+ios/*.xcodeproj/project.xcworkspace/
+ios/*.xcodeproj/xcuserdata/
+
+# CocoaPods
+ios/Pods/
+ios/Podfile.lock
+
+# WalletConnect cache (if used)
+.walletconnect/
+
+# Xcode user data
+*.xcuserstate
+*.xcuserdata/
+
+# macOS system files
+.DS_Store
+
+# VSCode
+.vscode/
+
+# Optional: prevent committing generated assets
+src/assets/generated/
+
+# Node modules
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Build output
+build/
+dist/
+
+# iOS
+ios/Pods/
+ios/build/
+ios/DerivedData/
+ios/*.xcworkspace
+ios/*.xcodeproj/project.xcworkspace/
+ios/*.xcodeproj/xcuserdata/
+ios/*.xcodeproj/*.pbxuser
+ios/*.xcodeproj/*.mode1v3
+ios/*.xcodeproj/*.mode2v3
+ios/*.xcodeproj/*.perspectivev3
+
+# Android
+android/.gradle/
+android/app/build/
+android/build/
+android/local.properties
+android/.idea/
+android/.cxx/
+
+# React Native
+.expo/
+.expo-shared/
+*.keystore
+*.iml
+
+# Metro
+.cache/
+tmp/
+
+# Environment files
+.env
+.env.local
+.env.*.local
