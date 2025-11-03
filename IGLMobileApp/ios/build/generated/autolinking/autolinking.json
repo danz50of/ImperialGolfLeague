@@ -1,20 +1,45 @@
 {
-  "root": "/Users/danz50of/Documents/ImperialGolfLeague/IGLMobileApp",
-  "reactNativePath": "/Users/danz50of/Documents/ImperialGolfLeague/IGLMobileApp/node_modules/react-native",
+  "root": "/Users/danz50of/ImperialGolfLeague/IGLMobileApp",
+  "reactNativePath": "/Users/danz50of/ImperialGolfLeague/IGLMobileApp/node_modules/react-native",
   "reactNativeVersion": "0.82",
   "dependencies": {
+    "@react-native-async-storage/async-storage": {
+      "root": "/Users/danz50of/ImperialGolfLeague/IGLMobileApp/node_modules/@react-native-async-storage/async-storage",
+      "name": "@react-native-async-storage/async-storage",
+      "platforms": {
+        "ios": {
+          "podspecPath": "/Users/danz50of/ImperialGolfLeague/IGLMobileApp/node_modules/@react-native-async-storage/async-storage/RNCAsyncStorage.podspec",
+          "version": "1.24.0",
+          "configurations": [],
+          "scriptPhases": []
+        },
+        "android": {
+          "sourceDir": "/Users/danz50of/ImperialGolfLeague/IGLMobileApp/node_modules/@react-native-async-storage/async-storage/android",
+          "packageImportPath": "import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;",
+          "packageInstance": "new AsyncStoragePackage()",
+          "buildTypes": [],
+          "libraryName": "rnasyncstorage",
+          "componentDescriptors": [],
+          "cmakeListsPath": "/Users/danz50of/ImperialGolfLeague/IGLMobileApp/node_modules/@react-native-async-storage/async-storage/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
+        }
+      }
+    },
     "react-native-safe-area-context": {
-      "root": "/Users/danz50of/Documents/ImperialGolfLeague/IGLMobileApp/node_modules/react-native-safe-area-context",
+      "root": "/Users/danz50of/ImperialGolfLeague/IGLMobileApp/node_modules/react-native-safe-area-context",
       "name": "react-native-safe-area-context",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/danz50of/Documents/ImperialGolfLeague/IGLMobileApp/node_modules/react-native-safe-area-context/react-native-safe-area-context.podspec",
+          "podspecPath": "/Users/danz50of/ImperialGolfLeague/IGLMobileApp/node_modules/react-native-safe-area-context/react-native-safe-area-context.podspec",
           "version": "5.6.2",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/danz50of/Documents/ImperialGolfLeague/IGLMobileApp/node_modules/react-native-safe-area-context/android",
+          "sourceDir": "/Users/danz50of/ImperialGolfLeague/IGLMobileApp/node_modules/react-native-safe-area-context/android",
           "packageImportPath": "import com.th3rdwave.safeareacontext.SafeAreaContextPackage;",
           "packageInstance": "new SafeAreaContextPackage()",
           "buildTypes": [],
@@ -23,7 +48,7 @@
             "RNCSafeAreaProviderComponentDescriptor",
             "RNCSafeAreaViewComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/danz50of/Documents/ImperialGolfLeague/IGLMobileApp/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/danz50of/ImperialGolfLeague/IGLMobileApp/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -194,7 +219,7 @@
         {
           "name": "--path <path>",
           "description": "Path to the React Native project root.",
-          "default": "/Users/danz50of/Documents/ImperialGolfLeague/IGLMobileApp/ios"
+          "default": "/Users/danz50of/ImperialGolfLeague/IGLMobileApp/ios"
         },
         {
           "name": "--platform <string>",
@@ -494,7 +519,7 @@
   "assets": [],
   "project": {
     "ios": {
-      "sourceDir": "/Users/danz50of/Documents/ImperialGolfLeague/IGLMobileApp/ios",
+      "sourceDir": "/Users/danz50of/ImperialGolfLeague/IGLMobileApp/ios",
       "xcodeProject": {
         "name": "IGLMobileApp.xcworkspace",
         "path": ".",
@@ -503,7 +528,7 @@
       "assets": []
     },
     "android": {
-      "sourceDir": "/Users/danz50of/Documents/ImperialGolfLeague/IGLMobileApp/android",
+      "sourceDir": "/Users/danz50of/ImperialGolfLeague/IGLMobileApp/android",
       "appName": "app",
       "packageName": "com.iglmobileapp",
       "applicationId": "com.iglmobileapp",
