@@ -1,14 +1,7 @@
 import SignClient from '@walletconnect/sign-client';
 //import { TextDecoder, TextEncoder } from 'util';
 import icon from '../../assets/icon.png';
-import { TextDecoder as PolyfillTextDecoder, TextEncoder as PolyfillTextEncoder } from 'text-encoding-utf-8';
 
-if (typeof global.TextDecoder === 'undefined') {
-  global.TextDecoder = PolyfillTextDecoder as unknown as typeof TextDecoder;
-}
-if (typeof global.TextEncoder === 'undefined') {
-  global.TextEncoder = PolyfillTextEncoder as unknown as typeof TextEncoder;
-}
 
 let client: SignClient | null = null;
 
