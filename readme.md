@@ -163,3 +163,16 @@ This project uses Hardhat 3 Beta for contract deployment and testing. All exampl
 
 - npx hardhat run scripts/deploySeasonalNFT.ts
 - npx hardhat run scritps/deployAchievementNFT.ts
+
+### App Scripts, emulation and testing
+
+- npm start -- --reset-cache
+  - ** Starts the metro application enabling testing
+- npx react-native run-ios
+  - ** Starts the IOS emulator
+- npx react-native run-android
+  - ** Starts the android emulator
+- ./gradlew clean
+  - ** from android folder, cleans the assets prior to running and testing
+- emulator -list-avds
+- emulator -avd IGLTest
