@@ -47,6 +47,10 @@ ios/*.xcworkspace
 ios/*.xcodeproj/project.xcworkspace/
 ios/*.xcodeproj/xcuserdata/
 
+# android artifacts
+IGLMobileApp/ios
+IGLMobileApp/android
+
 # CocoaPods
 ios/Pods/
 ios/Podfile.lock
