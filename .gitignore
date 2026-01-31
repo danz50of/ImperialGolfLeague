@@ -22,3 +22,6 @@
 *.car
 *.log
 
+/IGLMobileApp/android
+/IGLMobileApp/ios
+/IGLMobileApp/node_modules
