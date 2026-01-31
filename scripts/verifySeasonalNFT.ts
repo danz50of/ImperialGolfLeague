@@ -1,22 +1,20 @@
 import { ethers } from "hardhat";
 import dotenv from "dotenv";
+import { HardhatRuntimeEnvironment } from "hardhat/types";
 import hre from "hardhat";
+import { LedgerSigner } from "@ethersproject/hardware-wallets";
 
 dotenv.config();
 
 async function main() {
+  
   const [deployer] = await ethers.getSigners();
-  console.log("🚀 Deploying SeasonalNFT with deployer:", deployer.address);
-
-  const safeAddress = process.env.SAFE_ADDRESS;
-  if (!safeAddress) {
-    throw new Error("❌ SAFE_ADDRESS not set in .env");
-  }
-
+  console.log("🚀 Deploying SeasonalNFT with address:", deployer.address);
+  
   const SeasonalNFT = await ethers.getContractFactory("SeasonalNFT");
-  const seasonalContract = await SeasonalNFT.deploy(safeAddress);
+  const seasonalContract = await SeasonalNFT.deploy(deployer.address);
 
-  console.log("✅ SeasonalNFT deployed to:", seasonalContract.target);
+  console.log("✅ seasonalNFT deployed to:", seasonalContract.target);
   console.log("📍 Network:", hre.network.name);
 
   const owner = await seasonalContract.owner();

@@ -48,7 +48,7 @@
 </head>
 <body>
 
-  <h1>🏌️‍♂️ Imperial Golf League – Full Roadmap</h1>
+ <h1>🏌️‍♂️ Imperial Golf League – Full Roadmap</h1>
 
   <h2>🧱 Phase 1: Core Smart Contract & Trophy Minting</h2>
   <ul>
@@ -58,21 +58,32 @@
     <li class="completed">Metadata pinned to IPFS</li>
     <li class="completed">View functions (currentTokenId, ownerOf) added</li>
     <li class="completed">Trophy registry markdown drafted</li>
-    <li class="pending">Deploy contract to Amoy testnet</li>
-    <li class="pending">Add getAchievements(address) view function</li>
+    <li class="completed">Deploy contract to Amoy testnet</li>
+    <li class="completed">Add getAchievements(address) view function</li>
+    <li class="pending">Deploy to Mainnet</li>
   </ul>
 
-  <h2>🎮 Phase 2: Gameplay Logic & Event System</h2>
+  <h2>🧩 Phase 2: Player Registration & Identity Layer</h2>
+  <ul>
+    <li class="pending">Registration contract to tie players to wallet addresses</li>
+    <li class="pending">Player profile schema (name, bio, match history, trophies)</li>
+    <li class="pending">Dashboard integration for profile display</li>
+    <li class="pending">Governance role assignment (voter eligibility)</li>
+    <li class="pending">NFT ownership tracking per player</li>
+    <li class="pending">AARON token minting for participation and wins</li>
+    <li class="pending">HTML profile page generation (igl.site/players/0x123...)</li>
+  </ul>
+
+  <h2>🎮 Phase 3: Gameplay Logic & Event System</h2>
   <ul>
     <li class="pending">Match lifecycle (start, score, end)</li>
-    <li class="pending">Player registration & identity</li>
     <li class="pending">Scoring engine (hole-by-hole)</li>
     <li class="pending">Trophy triggers (Hole-in-One, MVP)</li>
     <li class="pending">Game history archive</li>
     <li class="pending">Frontend dashboard (React or Next.js)</li>
   </ul>
 
-  <h2>🏛️ Phase 3: Governance & DAO Integration</h2>
+  <h2>🏛️ Phase 4: Governance & DAO Integration</h2>
   <ul>
     <li class="pending">Commissioner role gating</li>
     <li class="pending">DAO proposal system</li>
@@ -81,16 +92,16 @@
     <li class="pending">Governance documentation</li>
   </ul>
 
-  <h2>📦 Phase 4: Infrastructure & DevOps</h2>
+  <h2>📦 Phase 5: Infrastructure & DevOps</h2>
   <ul>
     <li class="completed">GitHub project structure scaffolded</li>
-    <li class="pending">CI/CD pipeline (optional)</li>
     <li class="completed">IPFS pinning strategy confirmed</li>
+    <li class="pending">CI/CD pipeline (optional)</li>
     <li class="pending">Markdown registry automation</li>
     <li class="pending">Internal wiki & SOPs</li>
   </ul>
 
-  <h2>🧭 Phase 5: Expansion & Legacy</h2>
+  <h2>🧬 Phase 6: Expansion & Legacy</h2>
   <ul>
     <li class="pending">Multi-season trophy support</li>
     <li class="pending">Player stats & analytics</li>
@@ -114,22 +125,56 @@
       </tr>
       <tr>
         <td>Sprint 2</td>
-        <td>Match lifecycle, scoring engine, frontend prototype</td>
+        <td>Player registration, profile schema, dashboard integration</td>
       </tr>
       <tr>
         <td>Sprint 3</td>
-        <td>Commissioner gating, DAO proposal logic</td>
+        <td>Match lifecycle, scoring engine, frontend prototype</td>
       </tr>
       <tr>
         <td>Sprint 4</td>
-        <td>Treasury setup, governance SOPs, CI/CD</td>
+        <td>Commissioner gating, DAO proposal logic</td>
       </tr>
       <tr>
         <td>Sprint 5</td>
+        <td>Treasury setup, governance SOPs, CI/CD</td>
+      </tr>
+      <tr>
+        <td>Sprint 6</td>
         <td>Trophy expansion, player stats, mobile UI</td>
       </tr>
     </tbody>
   </table>
+<h2>📍 Sprint Tracker</h2>
 
+  <h3>✅ Sprint 1 – IGL Mainnet Launch Readiness</h3>
+  <p><strong>🗓️ Duration:</strong> Oct 28 – Nov 8<br>
+     <strong>🎯 Focus:</strong> Confirm readiness for Polygon mainnet deployment<br>
+     <strong>🔒 Scope:</strong> Token minting, NFT tracking, CI/CD, dashboard rendering, role gating<br>
+     <strong>🧠 Branch Prefix:</strong> <code>mainnet/</code><br>
+     <strong>📣 Comment Tag:</strong> <code>Sprint 1 – IGL Mainnet Launch Readiness</code>
+  </p>
+  <ul>
+    <li class="pending">Confirm POL Mainnet Stability (<a href="https://github.com/danz50of/ImperialGolfLeague/issues/18">#18</a>)</li>
+    <li class="pending">Validate token minting on POL (<a href="https://github.com/danz50of/ImperialGolfLeague/issues/56">#56</a>)</li>
+    <li class="pending">Confirm NFT ownership tracking (<a href="https://github.com/danz50of/ImperialGolfLeague/issues/55">#55</a>)</li>
+    <li class="pending">Confirm CI/CD pipeline for mainnet deploy (<a href="https://github.com/danz50of/ImperialGolfLeague/issues/66">#66</a>)</li>
+    <li class="pending">Validate governance role gating (<a href="https://github.com/danz50of/ImperialGolfLeague/issues/54">#54</a>)</li>
+    <li class="pending">Confirm dashboard renders on mainnet (<a href="https://github.com/danz50of/ImperialGolfLeague/issues/72">#72</a>)</li>
+  </ul>
+
+  <h3>⏭️ Sprint 2 – Phase 2 Identity Layer Buildout</h3>
+  <p><strong>🗓️ Duration:</strong> Nov 8 – Nov 18<br>
+     <strong>🎯 Focus:</strong> Wallet binding, profile schema, dashboard wiring, HTML rendering<br>
+     <strong>🔒 Scope:</strong> No DAO, gameplay, or infrastructure logic<br>
+     <strong>🧠 Branch Prefix:</strong> <code>identity/</code><br>
+     <strong>📣 Comment Tag:</strong> <code>Sprint 2 – Identity Layer</code>
+  </p>
+  <ul>
+    <li class="pending">Register players with wallet binding (<a href="https://github.com/danz50of/ImperialGolfLeague/issues/52">#52</a>)</li>
+    <li class="pending">Design player profile schema (<a href="https://github.com/danz50of/ImperialGolfLeague/issues/53">#53</a>)</li>
+    <li class="pending">Wire dashboard to profile data (<a href="https://github.com/danz50of/ImperialGolfLeague/issues/72">#72</a>)</li>
+    <li class="pending">Generate HTML profile pages (<a href="https://github.com/danz50of/ImperialGolfLeague/issues/73">#73</a>)</li>
+  </ul>
 </body>
 </html>

@@ -11,7 +11,8 @@ async function main() {
   console.log("🚀 Deploying AchievementNFT with address:", deployer.address);
 
   const AchievementNFT = await ethers.getContractFactory("AchievementNFT");
-  const contract = await AchievementNFT.deploy(deployer.address);
+  const safeAddress = process.env.SAFE_ADDRESS;
+  const contract = await AchievementNFT.deploy(safeAddress);
 
   console.log("✅ AchievementNFT deployed to:", contract.target);
   console.log("📍 Network:", hre.network.name);
@@ -20,4 +21,4 @@ async function main() {
 main().catch((error) => {
   console.error("❌ Deployment failed:", error);
   process.exit(1);
-});
+}); 

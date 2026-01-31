@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Imperial Golf League Protocol: a seasonal, tokenized golf ecosystem combining real-world play, mobile gameplay, NFT utility, and decentralized governance.",
   "devDependencies": {
+    "@nomicfoundation/hardhat-ledger": "^1.2.0",
     "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "@nomicfoundation/hardhat-verify": "^2.1.0",
     "@types/chai": "^4.3.20",
     "@types/chai-as-promised": "^8.0.2",
     "@types/mocha": "^10.0.10",
@@ -17,6 +19,7 @@
     "typescript": "~5.8.0"
   },
   "dependencies": {
+    "@ethersproject/hardware-wallets": "^5.8.0",
     "@ipld/car": "^5.4.2",
     "@openzeppelin/contracts": "^5.4.0",
     "@ucanto/core": "^10.4.0",
