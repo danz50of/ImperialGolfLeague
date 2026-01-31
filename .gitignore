@@ -67,6 +67,9 @@ ios/Podfile.lock
 # Optional: prevent committing generated assets
 src/assets/generated/
 
+/IGLMobileApp/android
+/IGLMobileApp/ios
+/IGLMobileApp/node_modules
 # Node modules
 node_modules/
 
